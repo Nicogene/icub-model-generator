@@ -87,9 +87,8 @@ before_script:
   - git clone https://github.com/orocos/orocos_kinematics_dynamics
   - cd orocos_kinematics_dynamics/orocos_kdl
   # Go the commit of the 7th Septmber 2018 for 
-  # orocos_kdl, console_bridge, urdfdom_headers and urdfdom, see 
+  #  console_bridge, urdfdom_headers and urdfdom, see 
   # https://travis-ci.org/robotology/icub-model-generator/builds/425819092?utm_source=github_status&utm_medium=notification
-  - git checkout f51621f6571e5ad9512ea12741bece39b4ce919b
   - mkdir build
   - cd build
   - cmake ..
@@ -125,8 +124,6 @@ before_script:
   ## idyntree
   - git clone https://github.com/robotology/idyntree.git
   - cd idyntree
-  # commit taken from https://github.com/robotology/icub-models/commit/b69b989af389831fc82b9740deb73c148590da74
-  - git checkout 6f98701123e66b8fbb274e8e0ae657d7688f7501
   - export IDYNTREE_COMMIT=`git rev-parse HEAD`
   - mkdir build
   - cd build
